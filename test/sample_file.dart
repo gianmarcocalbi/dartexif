@@ -1,8 +1,10 @@
-import 'package:json_annotation/json_annotation.dart';
 import 'dart:convert';
+
+import 'package:json_annotation/json_annotation.dart';
+
 part 'sample_file.g.dart';
 
-@JsonSerializable(nullable: false)
+@JsonSerializable()
 class SampleFile {
   String name;
   String encodedContent;
